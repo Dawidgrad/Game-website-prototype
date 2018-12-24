@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+            
+            <a href="/index.html" class="navbar-brand brand" style="color: #ffc107">Game</a>
+            <div class="collapse navbar-collapse navigation-panel">
+                
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link navigation active" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navigation" href="#">Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navigation" href="#">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navigation" href="#">Forum</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navigation" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Support
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Add ticket</a>
+                            <a class="dropdown-item" href="#">Check ticket status</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navigation" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ranking
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Player ranking</a>
+                            <a class="dropdown-item" href="#">Guild ranking</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <a class="btn btn-warning navbar-btn" href="/login.html">Log-in</a>
+                <a class="btn btn-warning navbar-btn" href="/register.html">Register</a>
+                
+            </div>
+        
+    </nav>
+    
+    <div class="container-fluid row" style="margin-top: 100px">
+        <div class="page-section col-lg-10 mx-auto">
+            
+            <h3 style="text-align: center; margin-bottom: 30px">Add ticket</h3>
+            <form>
+                
+                <div class="row">
+                    <div class="form-group col-lg-8 mx-auto">
+                        <input class="form-control form-field" style="height: 150px" type="text" id="message"/>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="form-group col-lg-5 mx-auto">
+                        <input class="form-control form-field" type="text" id="email" placeholder="Your Email *"/>
+                    </div> 
+                    
+                    <div class="form-group col-lg-5 mx-auto">
+                        <select class="form-control form-field">
+                            <option class="hidden" selected disabled>Select the administrator</option>
+                            <option>[GM] LastGuardian</option>
+                            <option>[GM] Dominoo</option>
+                            <option>[GM] Yabol</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="form-group col-lg-5 mx-auto">
+                        <select class="form-control form-field">
+                            <option class="hidden" selected disabled>Select the issue</option>
+                            <option>Game bug</option>
+                            <option>Lost items</option>
+                            <option>Account problem</option>
+                            <option>Site problem</option>
+                            <option>Forum problem</option>
+                            <option>Question</option>
+                            <option>Trouble with downloading</option>
+                            <option>Site problem</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group col-lg-5 mx-auto">
+                        <select class="form-control form-field">
+                            <option class="hidden" selected disabled>Priority</option>
+                            <option>Low</option>
+                            <option>Medium</option>
+                            <option>High</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    
+                </div>
+                
+                <button class="btn btn-info button-shadow centered-button" type="submit">Submit</button>
+            </form>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
