@@ -9,6 +9,20 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    
+    
+    <script type="text/javascript">
+        function addField()
+        {
+            var container = document.getElementById("ticketForm");
+            
+            container.appendChild(document.createTextNode("Member"));
+            var input = document.createElement("input");
+            input.type = "text";
+            container.append(input);
+            container.append(document.createElement("br"));
+        }
+    </script>
 </head>
 <body>
 
@@ -58,7 +72,7 @@
     </nav>
     
     <div class="container-fluid row" style="margin-top: 100px">
-        <div class="page-section col-lg-10 mx-auto">
+        <div class="page-section col-lg-10 mx-auto" id="ticketForm">
             
             <h3 style="text-align: center; margin-bottom: 30px">Add ticket</h3>
             <form>
@@ -109,9 +123,8 @@
                     </div>
                 </div>
                 
-                <div class="row">
-                    
-                </div>
+                <label>Files</label>
+                <button class="btn btn-default" onclick="addField()">add field</button>
                 
                 <button class="btn btn-info button-shadow centered-button" type="submit">Submit</button>
             </form>
