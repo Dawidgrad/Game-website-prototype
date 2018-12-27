@@ -8,4 +8,4 @@ a.navigation{width: 150px; text-align: center}
 
 div.page-section{background-color: white; box-shadow: 10px 5px 5px gray; border-radius: 25px; padding: 10px 20px 10px 20px}
 
-.form-field{margin: 0 auto; display: block;}
+.form-field{margin: 0 auto; display: block; margin-top: 10px; margin-bottom: 10px}

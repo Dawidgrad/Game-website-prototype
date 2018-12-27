@@ -75,61 +75,17 @@
     <div class="container-fluid row" style="margin-top: 100px">
         <div class="page-section col-lg-10 mx-auto">
             
-            <h3 style="text-align: center; margin-bottom: 30px">Add a ticket</h3>
+            <h3 style="text-align: center; margin-bottom: 30px">Check ticket status</h3>
             <form>
-                
-                <div class="row">
-                    <div class="form-group col-lg-8 mx-auto">
-                        <textarea class="form-control form-field" id="message" placeholder="Message *"></textarea>
-                    </div>
+                <div class="form-group col-lg-6 mx-auto">
+                    <label for="name">Email</label>
+                    <input class="form-control" type="text" id="email" placeholder="Email"/>
                 </div>
                 
-                <div class="row">
-                    <div class="form-group col-lg-5 mx-auto">
-                        <input class="form-control form-field" type="text" id="email" placeholder="Your Email *"/>
-                    </div> 
-                    
-                    <div class="form-group col-lg-5 mx-auto">
-                        <select class="form-control form-field">
-                            <option class="hidden" selected disabled>Select the administrator</option>
-                            <option>[GM] LastGuardian</option>
-                            <option>[GM] Dominoo</option>
-                            <option>[GM] Yabol</option>
-                        </select>
-                    </div>
+                <div class="form-group col-lg-6 mx-auto">
+                    <label for="name">Ticket number</label>
+                    <input class="form-control" type="password" id="ticketNumber" placeholder="Ticket number"/>
                 </div>
-                
-                <div class="row">
-                    <div class="form-group col-lg-5 mx-auto">
-                        <select class="form-control form-field">
-                            <option class="hidden" selected disabled>Select the issue *</option>
-                            <option>Game bug</option>
-                            <option>Lost items</option>
-                            <option>Account problem</option>
-                            <option>Site problem</option>
-                            <option>Forum problem</option>
-                            <option>Question</option>
-                            <option>Trouble with downloading</option>
-                            <option>Site problem</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group col-lg-5 mx-auto">
-                        <select class="form-control form-field">
-                            <option class="hidden" selected disabled>Priority</option>
-                            <option>Low</option>
-                            <option>Medium</option>
-                            <option>High</option>
-                        </select>
-                    </div>
-                </div>
-                
-                <label><b>Files</b></label>
-                
-                <div id="ticketForm">
-                </div>
-                
-                <button class="btn btn-dark button-shadow" type="button" onclick="addField()">Add file</button>
                 
                 <button class="btn btn-info button-shadow centered-button" type="submit">Submit</button>
             </form>
