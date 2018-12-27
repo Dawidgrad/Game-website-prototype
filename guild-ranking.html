@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Login</title>
+    <title>Guild ranking</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -60,20 +60,82 @@
     <div class="container-fluid row" style="margin-top: 100px">
         <div class="page-section col-lg-10 mx-auto">
             
-            <h3 class="section-heading">Check ticket status</h3>
-            <form>
-                <div class="form-group col-lg-6 mx-auto">
-                    <label for="name">Email</label>
-                    <input class="form-control" type="text" id="email" placeholder="Email"/>
-                </div>
+            <h3 class="section-heading">Guild ranking</h3>
+            <table style="width:100%" class="table-striped section-margin-bottom">
+                <tr style="height: 40px;">
+                    <th>Name</th>
+                    <th>Level</th>
+                    <th>Fraction</th>
+                </tr>
+                <tr style="height: 40px;">
+                    <td>Chocobo</td>
+                    <td>53</td>
+                    <td>Blue</td>
+                </tr>
+                <tr style="height: 40px;">
+                    <td>Prompto</td>
+                    <td>51</td>
+                    <td>Red</td>
+                </tr>
+                <tr style="height: 40px;">
+                    <td>Yagami</td>
+                    <td>49</td>
+                    <td>Yellow</td>
+                </tr>
+                <tr style="height: 40px;">
+                    <td>Kaede</td>
+                    <td>49</td>
+                    <td>Red</td>
+                </tr>
+                <tr style="height: 40px;">
+                    <td>Evelynn</td>
+                    <td>47</td>
+                    <td>Red</td>
+                </tr>
+                <tr style="height: 40px;">
+                    <td>Octane</td>
+                    <td>46</td> 
+                    <td>Paladin</td>
+                    <td>Blue</td>
+                </tr>
+                <tr style="height: 40px;">
+                    <td>Araragi</td>
+                    <td>46</td>
+                    <td>Blue</td>
+                </tr>
+                <tr style="height: 40px;">
+                    <td>AcerolaOrion</td>
+                    <td>46</td>
+                    <td>Yellow</td>
+                </tr>
+                <tr style="height: 40px;">
+                    <td>Nanami</td>
+                    <td>45</td>
+                    <td>Blue</td>
+                </tr>
+                <tr style="height: 40px;">
+                    <td>GloriaBorger</td>
+                    <td>45</td>
+                    <td>Yellow</td>
+                </tr>
+            </table>
+            
+            <div class="row mx-auto">
+                <button class="btn btn-dark button-shadow disabled col-lg-3 mx-auto" type="button">Previous</button>
                 
-                <div class="form-group col-lg-6 mx-auto">
-                    <label for="name">Ticket number</label>
-                    <input class="form-control" type="password" id="ticketNumber" placeholder="Ticket number"/>
-                </div>
+                <div class="form-group col-lg-3 mx-auto" style="margin-top: 10px">
+                        <select class="form-control" style="height: 35px">
+                            <option class="hidden" selected disabled>1-10</option>
+                            <option>11-20</option>
+                            <option>21-30</option>
+                            <option>31-40</option>
+                            <option>41-50</option>
+                            <option>51-60</option>
+                        </select>
+                    </div>
                 
-                <button class="btn btn-info button-shadow centered-button" type="submit">Submit</button>
-            </form>
+                <button class="btn btn-dark button-shadow col-lg-3 mx-auto" type="button">Next</button>
+            </div>
             
         </div>
     </div>
