@@ -30,4 +30,7 @@ div.forum-section-header{background-color: #abc7f4}
 a.navigation{width: 150px; text-align: center}
 
 .read-more-button{margin-right: 20px; width: 150px}
+.breadcrumb{background-color: #c0c0c0}
 
+.comment-text{padding-left: 70px; margin-top: 10px}
+.comment-signature{text-align: right; margin-bottom: 10px}
