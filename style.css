@@ -1,19 +1,30 @@
 body{background-color: #e0e0e0}
-.navigation-panel{width: 100%;}
-a.navigation{width: 150px; text-align: center}
-.btn{margin: 10px}
 .container-fluid{padding: 20px 0px 40px 0px; width: 100%}
 .section-heading{text-align: center; margin-bottom: 30px}
 .section-margin-bottom{margin-bottom: 30px}
+.full-width{width: 100%}
 
+/* Page sections */
 div.page-section{background-color: white; box-shadow: 10px 5px 5px gray; border-radius: 25px; padding: 10px 20px 10px 20px}
 div.page-header-section{background-color: white; box-shadow: 10px 5px 5px gray; border-radius: 25px; padding: 10px 20px 0px 20px; margin-top: 50px; margin-bottom: 40px}
+div.first-page-section{margin-top: 100px}
 
+/* Forum */
 div.forum-section{background-color: white; box-shadow: 10px 5px 5px gray; padding: 10px 20px 10px 20px; border-style: groove}
 div.forum-section-header{background-color: #abc7f4}
 
+/* Form */
 .form-field{margin: 0 auto; display: block; margin-top: 10px; margin-bottom: 10px}
  
+/* Form elements */
+.btn{margin: 10px}
 .button-shadow{box-shadow: 5px 2px 2px gray; border-radius: 10px; }
 .centered-button{width: 50%; margin: 0 auto; margin-top: 30px; display: block;}
 .centered-text{text-align: center}
+.table-row-height{height: 40px}
+.dropdown-top-margin{margin-top: 10px}
+
+/* Navigation */
+.brand{color: #ffc107 !important;}
+.navigation-panel{width: 100%;}
+a.navigation{width: 150px; text-align: center}
