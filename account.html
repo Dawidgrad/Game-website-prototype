@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Main page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+            
+            <a href="/index.html" class="navbar-brand brand">Game</a>
+            <div class="collapse navbar-collapse navigation-panel">
+                
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link navigation active" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navigation" href="#">Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navigation" href="/download.html">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navigation" href="/forum-main.html">Forum</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navigation" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Support
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/add-ticket.html">Add ticket</a>
+                            <a class="dropdown-item" href="/check-ticket.html">Check ticket status</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navigation" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ranking
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/player-ranking.html">Player ranking</a>
+                            <a class="dropdown-item" href="/guild-ranking.html">Guild ranking</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <a class="btn btn-warning navbar-btn" href="/login.html">Log-in</a>
+                <a class="btn btn-warning navbar-btn" href="/register.html">Register</a>
+                
+            </div>
+        
+    </nav>
+    
+    <div class="container-fluid row page-header-section col-lg-8 mx-auto">
+        <div class="col-lg-10 mx-auto">
+            <h3 class="centered-text">Account</h3>
+        </div>
+        <div class="col-lg-10 mx-auto">
+            <p class="centered-text">Account settings and preferences page</p>
+        </div>
+    </div>
+    
+    
+    <div class="container-fluid row page-section col-lg-10 mx-auto">
+        <div class="row" style="min-height:300px;">
+        
+                <div class="col-lg-4">
+                    <ul class="nav nav-tabs tabs-left">
+                        <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                        <li><a href="#profile" data-toggle="tab">Profile</a></li>
+                        <li><a href="#messages" data-toggle="tab">Messages</a></li>
+                        <li><a href="#settings" data-toggle="tab">Settings</a></li>
+                    </ul>
+                </div>
+            
+                <div class="col-lg-8">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="home">Home Tab.</div>
+                        <div class="tab-pane" id="profile">Profile Tab.</div>
+                        <div class="tab-pane" id="messages">Messages Tab.</div>
+                        <div class="tab-pane" id="settings">Settings Tab.</div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
