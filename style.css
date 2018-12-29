@@ -8,10 +8,12 @@ body{background-color: #e0e0e0}
 div.page-section{background-color: white; box-shadow: 10px 5px 5px gray; border-radius: 25px; padding: 10px 20px 10px 20px}
 div.page-header-section{background-color: white; box-shadow: 10px 5px 5px gray; border-radius: 25px; padding: 10px 20px 0px 20px; margin-top: 50px; margin-bottom: 40px}
 div.first-page-section{margin-top: 100px}
+div.points-purchase-section{background-color: dimgray; box-shadow: 10px 5px 5px gray; border-radius: 25px; padding: 10px 0px 10px 0px; color: white}
 
 /* Forum */
 div.forum-section{background-color: white; box-shadow: 10px 5px 5px gray; padding: 10px 20px 10px 20px; border-style: groove}
 div.forum-section-header{background-color: #abc7f4}
+div.vertical-tabs-section{border-left: 3px solid darkgray}
 
 /* Form */
 .form-field{margin: 0 auto; display: block; margin-top: 10px; margin-bottom: 10px}
@@ -32,5 +34,6 @@ a.navigation{width: 150px; text-align: center}
 .read-more-button{margin-right: 20px; width: 150px}
 .breadcrumb{background-color: #c0c0c0}
 
+/* Comment section */
 .comment-text{padding-left: 70px; margin-top: 10px}
 .comment-signature{text-align: right; margin-bottom: 10px}
