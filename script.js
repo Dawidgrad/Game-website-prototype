@@ -1,13 +1,21 @@
+/***********************************
+             Accounts
+***********************************/
+
 var objAccounts = [
     {
         username: "admin",
         password: "temp"
     },
     {
-        username: "dawid",
-        password: "grad"
+        username: "joshua",
+        password: "mko09ijn"
     }
 ]
+
+/***********************************
+            Login system
+***********************************/
 
 function getInfo()
 {
@@ -20,20 +28,24 @@ function getInfo()
         {
             if (password == objAccounts[i].password)
             {
+                location = 'index.html';
                 alert("You have successfully logged in!");
                 document.cookie = "loggedIn=true";
                 
                 userLoggedIn();
                 
-                return
+                return false;
             }
             
+            location = 'login.html';
             alert("Invalid password!");
-            return
+            return false;
         }
     }
     
+    location = 'login.html';
     alert("The account could not be found!");
+    return false;
 }
 
 function userLoggedIn()
@@ -72,6 +84,63 @@ function checkIfLoggedIn()
     }
 }
 
+
+/***********************************
+            Message boxes
+***********************************/
+
+function changeEmail()
+{
+    alert("Email changed successfully!");
+}
+
+function changePassword()
+{
+    alert("Password changed successfully!");
+}
+
+function purchasePoints()
+{
+    alert("You will be redirected to payment site...");
+}
+
+function changeNotifications()
+{
+    alert("Notifications preference changed successfully!");
+}
+
+function changeSecretQuestion()
+{
+    alert("Secret question changed successfully!");
+}
+
+function addTicket()
+{
+    alert("Ticket has been added successfully!");
+}
+
+function checkTicket()
+{
+    var email = document.getElementById("email").value
+    var ticketNumber = document.getElementById("ticketNumber").value
+    
+    if (email == "joshua@gmail.com" && ticketNumber == "2584")
+    {
+        alert("Ticket found! You will be redirected to ticket page!");
+        location = 'ticket-status-example.html';
+    }
+    else
+    {
+        alert("Ticket has not been found! Check if email and ticket number are correct!");
+        location = 'check-ticket.html';
+    }
+    return false;
+}
+
+
+/***********************************
+    Dynamic addition of elements
+***********************************/
 function addFieldTicket()
 {
     var container = document.getElementById("ticketForm");

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Check ticket status</title>
+    <title>Player ranking</title>
     <meta charset="utf-8">
    
     
@@ -67,20 +67,88 @@
     <div class="container-fluid row first-page-section">
         <div class="page-section col-lg-10 mx-auto">
             
-            <h3 class="section-heading">Check ticket status</h3>
-            <form onsubmit="return checkTicket();">
-                <div class="form-group col-lg-6 mx-auto">
-                    <label for="name">Email</label>
-                    <input class="form-control" type="text" id="email" placeholder="Email"/>
-                </div>
+            <h3 class="section-heading">Player ranking</h3>
+            <table class="table-striped section-margin-bottom full-width">
+                <tr class="table-row-height">
+                    <th>Nickname</th>
+                    <th>Level</th> 
+                    <th>Class</th>
+                    <th>Fraction</th>
+                </tr>
+                <tr class="table-row-height">
+                    <td>Xanthie</td>
+                    <td>45</td> 
+                    <td>Ranger</td>
+                    <td>Yellow</td>
+                </tr>
+                <tr class="table-row-height">
+                    <td>Angell</td>
+                    <td>44</td> 
+                    <td>Rogue</td>
+                    <td>Yellow</td>
+                </tr>
+                <tr class="table-row-height">
+                    <td>Annapurna</td>
+                    <td>44</td> 
+                    <td>Paladin</td>
+                    <td>Yellow</td>
+                </tr>
+                <tr class="table-row-height">
+                    <td>Buzz</td>
+                    <td>44</td> 
+                    <td>Healer</td>
+                    <td>Red</td>
+                </tr>
+                <tr class="table-row-height">
+                    <td>Auri</td>
+                    <td>44</td> 
+                    <td>Elementalist</td>
+                    <td>Red</td>
+                </tr>
+                <tr class="table-row-height">
+                    <td>BlackCat</td>
+                    <td>44</td> 
+                    <td>Healer</td>
+                    <td>Yellow</td>
+                </tr>
+                <tr class="table-row-height">
+                    <td>GloriaBorger</td>
+                    <td>44</td> 
+                    <td>Paladin</td>
+                    <td>Blue</td>
+                </tr>
+                <tr class="table-row-height">
+                    <td>Florina</td>
+                    <td>44</td> 
+                    <td>Elementalist</td>
+                    <td>Blue</td>
+                </tr>
+                <tr class="table-row-height">
+                    <td>HyperNova</td>
+                    <td>43</td> 
+                    <td>Rogue</td>
+                    <td>Red</td>
+                </tr>
+                <tr class="table-row-height">
+                    <td>Sephiros</td>
+                    <td>43</td> 
+                    <td>Paladin</td>
+                    <td>Yellow</td>
+                </tr>
+            </table>
+            
+            <div class="row mx-auto">
+                <button class="btn btn-dark button-shadow col-lg-3 mx-auto" type="button" onclick="window.location='player-ranking.html';">Previous</button>
                 
-                <div class="form-group col-lg-6 mx-auto">
-                    <label for="name">Ticket number</label>
-                    <input class="form-control" type="text" id="ticketNumber" placeholder="Ticket number"/>
-                </div>
+                <div class="form-group col-lg-3 mx-auto dropdown-top-margin">
+                        <select class="form-control" onchange="location.href = this.value;">
+                            <option value="player-ranking.html">1-10</option>
+                            <option class="hidden" selected disabled>11-20</option>
+                        </select>
+                    </div>
                 
-                <button class="btn btn-info button-shadow centered-button" type="submit">Submit</button>
-            </form>
+                <button class="btn btn-dark button-shadow disabled col-lg-3 mx-auto" type="button">Next</button>
+            </div>
             
         </div>
     </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Check ticket status</title>
+    <title>Guild ranking</title>
     <meta charset="utf-8">
    
     
@@ -67,20 +67,77 @@
     <div class="container-fluid row first-page-section">
         <div class="page-section col-lg-10 mx-auto">
             
-            <h3 class="section-heading">Check ticket status</h3>
-            <form onsubmit="return checkTicket();">
-                <div class="form-group col-lg-6 mx-auto">
-                    <label for="name">Email</label>
-                    <input class="form-control" type="text" id="email" placeholder="Email"/>
+            <h3 class="section-heading">Guild ranking</h3>
+            <table class="table-striped section-margin-bottom full-width">
+                <tr class="table-row-height">
+                    <th>Name</th>
+                    <th>Level</th>
+                    <th>Fraction</th>
+                </tr>
+                <tr class="table-row-height">
+                    <td>Silence</td>
+                    <td>15</td>
+                    <td>Red</td>
+                </tr>
+                <tr class="table-row-height">
+                    <td>UnderControl</td>
+                    <td>15</td>
+                    <td>Red</td>
+                </tr>
+                <tr class="table-row-height">
+                    <td>AbsoluteZero</td>
+                    <td>14</td>
+                    <td>Blue</td>
+                </tr>
+                <tr class="table-row-height">
+                    <td>Emperors</td>
+                    <td>14</td>
+                    <td>Yellow</td>
+                </tr>
+                <tr class="table-row-height">
+                    <td>DarkOrchid</td>
+                    <td>14</td>
+                    <td>Red</td>
+                </tr>
+                <tr class="table-row-height">
+                    <td>Horizon</td>
+                    <td>14</td>
+                    <td>Blue</td>
+                </tr>
+                <tr class="table-row-height">
+                    <td>Original</td>
+                    <td>14</td>
+                    <td>Blue</td>
+                </tr>
+                <tr class="table-row-height">
+                    <td>FiftyFive</td>
+                    <td>14</td>
+                    <td>Red</td>
+                </tr>
+                <tr class="table-row-height">
+                    <td>Refined</td>
+                    <td>14</td>
+                    <td>Blue</td>
+                </tr>
+                <tr class="table-row-height">
+                    <td>LoneRanger</td>
+                    <td>13</td>
+                    <td>Yellow</td>
+                </tr>
+            </table>
+            
+            <div class="row mx-auto">
+                <button class="btn btn-dark button-shadow col-lg-3 mx-auto" type="button" onclick="window.location='guild-ranking.html';">Previous</button>
+                
+                <div class="form-group col-lg-3 mx-auto dropdown-top-margin">
+                    <select class="form-control" onchange="location.href = this.value;">
+                        <option value="guild-ranking.html">1-10</option>
+                        <option class="hidden" selected disabled>11-20</option>
+                    </select>
                 </div>
                 
-                <div class="form-group col-lg-6 mx-auto">
-                    <label for="name">Ticket number</label>
-                    <input class="form-control" type="text" id="ticketNumber" placeholder="Ticket number"/>
-                </div>
-                
-                <button class="btn btn-info button-shadow centered-button" type="submit">Submit</button>
-            </form>
+                <button class="btn btn-dark button-shadow disabled col-lg-3 mx-auto" type="button">Next</button>
+            </div>
             
         </div>
     </div>
