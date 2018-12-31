@@ -67,3 +67,15 @@ function checkIfLoggedIn()
         userLoggedOut();
     }
 }
+
+function addFieldTicket()
+{
+    var container = document.getElementById("ticketForm");
+
+    container.appendChild(document.createTextNode(""));
+    var input = document.createElement("input");
+    input.type = "file";
+    input.style.margin = "3px";
+    container.append(input);
+    container.append(document.createElement("br"));
+}

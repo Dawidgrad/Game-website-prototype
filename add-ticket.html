@@ -3,29 +3,20 @@
 <head>
     <title>Add ticket</title>
     <meta charset="utf-8">
+   
+    
+    <!-- Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    
+    <!-- Local style and js -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    
-    
-    <script type="text/javascript">
-        function addField()
-        {
-            var container = document.getElementById("ticketForm");
-            
-            container.appendChild(document.createTextNode(""));
-            var input = document.createElement("input");
-            input.type = "file";
-            input.style.margin = "3px";
-            container.append(input);
-            container.append(document.createElement("br"));
-        }
-    </script>
+    <script type = "text/javascript" src = "script.js" ></script>
 </head>
-<body>
+<body onload="checkIfLoggedIn();">
 
     <nav class="navbar navbar-expand navbar-dark bg-dark">
             
@@ -65,8 +56,9 @@
                     </li>
                 </ul>
 
-                <a class="btn btn-warning navbar-btn" href="/login.html">Log-in</a>
-                <a class="btn btn-warning navbar-btn" href="/register.html">Register</a>
+                <a class="btn btn-warning navbar-btn" href="/login.html" id="loginButton">Log-in</a>
+                <a class="btn btn-warning navbar-btn" href="/register.html" id="registerButton">Register</a>
+                <a class="btn btn-warning navbar-btn hidden-element" href="/index.html" id="logoutButton" onclick="window.setTimeout(logOut());">Log out</a>
                 
             </div>
         
@@ -129,7 +121,7 @@
                 <div id="ticketForm">
                 </div>
                 
-                <button class="btn btn-dark button-shadow" type="button" onclick="addField()">Add file</button>
+                <button class="btn btn-dark button-shadow" type="button" onclick="addFieldTicket()">Add file</button>
                 
                 <button class="btn btn-info button-shadow centered-button" type="submit">Submit</button>
             </form>
