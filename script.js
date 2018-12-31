@@ -20,7 +20,7 @@ function getInfo()
         {
             if (password == objAccounts[i].password)
             {
-                alert("Successfully logged in!");
+                alert("You have successfully logged in!");
                 userLoggedIn();
                 
                 document.cookie = "loggedIn=true";
@@ -44,7 +44,15 @@ function userLoggedIn()
 
 function userLoggedOut()
 {
+    document.getElementById("loginButton").style.display = "initial";
+    document.getElementById("registerButton").style.display = "initial";
+    document.getElementById("logoutButton").style.display = "none";
+}
+
+function logOut()
+{
     document.cookie = "loggedIn=false";
+    alert("You have successfully logged out!");
 }
 
 function checkIfLoggedIn()
