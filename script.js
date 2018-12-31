@@ -21,14 +21,15 @@ function getInfo()
             if (password == objAccounts[i].password)
             {
                 alert("You have successfully logged in!");
-                userLoggedIn();
-                
                 document.cookie = "loggedIn=true";
+                
+                userLoggedIn();
                 
                 return
             }
             
-            alert("Invalid password!")
+            alert("Invalid password!");
+            return
         }
     }
     
@@ -40,6 +41,8 @@ function userLoggedIn()
     document.getElementById("loginButton").style.display = "none";
     document.getElementById("registerButton").style.display = "none";
     document.getElementById("logoutButton").style.display = "initial";
+    
+    document.getElementById("accountTab").classList.remove("disabled");
 }
 
 function userLoggedOut()
@@ -47,6 +50,7 @@ function userLoggedOut()
     document.getElementById("loginButton").style.display = "initial";
     document.getElementById("registerButton").style.display = "initial";
     document.getElementById("logoutButton").style.display = "none";
+    document.getElementById("accountTab").classList.add("disabled");
 }
 
 function logOut()
