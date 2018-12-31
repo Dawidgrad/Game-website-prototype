@@ -30,10 +30,12 @@ div.vertical-tabs-section{border-left: 3px solid darkgray}
 .brand{color: #ffc107 !important;}
 .navigation-panel{width: 100%;}
 a.navigation{width: 150px; text-align: center}
-
-.read-more-button{margin-right: 20px; width: 150px}
 .breadcrumb{background-color: #c0c0c0}
 
 /* Comment section */
 .comment-text{padding-left: 70px; margin-top: 10px}
 .comment-signature{text-align: right; margin-bottom: 10px}
+
+
+.read-more-button{margin-right: 20px; width: 150px}
+.hidden-element{display: none}
