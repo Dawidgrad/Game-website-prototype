@@ -17,8 +17,6 @@ div.vertical-tabs-section{border-left: 3px solid darkgray}
 
 /* Form */
 .form-field{margin: 0 auto; display: block; margin-top: 10px; margin-bottom: 10px}
- 
-/* Form elements */
 .btn{margin: 10px}
 .button-shadow{box-shadow: 5px 2px 2px gray; border-radius: 10px; }
 .centered-button{width: 50%; margin: 0 auto; margin-top: 30px; display: block;}
@@ -35,8 +33,10 @@ a.navigation{width: 150px; text-align: center}
 /* Comment section */
 .comment-text{padding-left: 70px; margin-top: 10px}
 .comment-signature{text-align: right; margin-bottom: 10px}
+.comment-box{margin-top: 20px}
+div.comment-section{border-top: 3px solid darkgray}
 
-
+/* Misc */
 .read-more-button{margin-right: 20px; width: 150px}
 .hidden-element{display: none}
 .search-box{float: right; margin-bottom: 10px}

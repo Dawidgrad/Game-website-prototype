@@ -15,12 +15,13 @@
     <!-- Local style and js -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type = "text/javascript" src = "script.js" ></script>
+    <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
 </head>
 <body onload="checkIfLoggedIn();">
 
     <nav class="navbar navbar-expand navbar-dark bg-dark">
             
-            <a href="/index.html" class="navbar-brand brand">Game</a>
+            <a href="/index.html" class="navbar-brand brand"><span class="oi oi-shield"></span></a>
             <div class="collapse navbar-collapse navigation-panel">
                 
                 <ul class="navbar-nav mx-auto">
@@ -242,17 +243,13 @@
         <button class="btn btn-dark button-shadow disabled col-lg-3 mx-auto" type="button">Previous</button>
 
         <div class="form-group col-lg-3 mx-auto dropdown-top-margin">
-            <select class="form-control">
+            <select class="form-control" onchange="location.href = this.value;">
                 <option class="hidden" selected disabled>1-10</option>
-                <option>11-20</option>
-                <option>21-30</option>
-                <option>31-40</option>
-                <option>41-50</option>
-                <option>51-60</option>
+                <option value="forum-thread-list-2.html">11-20</option>
             </select>
         </div>
 
-        <button class="btn btn-dark button-shadow col-lg-3 mx-auto" type="button">Next</button>
+        <button class="btn btn-dark button-shadow col-lg-3 mx-auto" type="button" onclick="window.location='forum-thread-list-2.html';">Next</button>
     </div>
     
 </body>

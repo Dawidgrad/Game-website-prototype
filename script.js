@@ -144,11 +144,6 @@ function addTicket()
     }
 }
 
-function addTicketReply()
-{
-    alert("Reply has been added successfully!");
-}
-
 function checkTicket()
 {
     var email = document.getElementById("email").value
@@ -177,6 +172,15 @@ function register()
     }
 }
 
+function addComment()
+{
+    alert("Comment has been added successfully!");
+}
+
+function addReply()
+{
+    alert("Reply has been added successfully!");
+}
 
 /***********************************
     Dynamic addition of elements

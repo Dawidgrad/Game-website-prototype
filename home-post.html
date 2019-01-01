@@ -15,12 +15,13 @@
     <!-- Local style and js -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type = "text/javascript" src = "script.js" ></script>
+    <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
 </head>
 <body onload="checkIfLoggedIn();">
 
     <nav class="navbar navbar-expand navbar-dark bg-dark">
             
-            <a href="/index.html" class="navbar-brand brand">Game</a>
+            <a href="/index.html" class="navbar-brand brand"><span class="oi oi-shield"></span></a>
             <div class="collapse navbar-collapse navigation-panel">
                 
                 <ul class="navbar-nav mx-auto">
@@ -128,9 +129,22 @@
             <div class="comment-signature">
                 <b>User Olsh - 19/12/2018 21:19</b>
             </div>
+            
+            <div class="comment-section">
+                <form onsubmit="return addComment()">
+
+                    <div class="row">
+                        <div class="form-group col-lg-10 mx-auto comment-box">
+                            <label>Comment</label>
+                            <textarea class="form-control form-field" id="message" placeholder="Your message here..." required></textarea>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-info button-shadow centered-button" type="submit">Submit</button>
+                </form>
+            </div>
         </div>
         
     </div>
-
 </body>
 </html>
