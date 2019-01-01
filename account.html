@@ -86,110 +86,114 @@
         <div class="tab-content col-lg-8 vertical-tabs-section" id="v-pills-tabContent">
             
             <div class="tab-pane fade show active" id="v-pills-email" role="tabpanel" aria-labelledby="v-pills-email-tab">
-                <form>
+                <form name="changeEmailForm" onsubmit="return changeEmail()">
                     <div class="form-group col-lg-6 mx-auto">
-                        <label for="name">Current email</label>
-                        <input class="form-control" type="text" id="currentEmail" placeholder="Current email *"/>
+                        <label for="name">Your current email *</label>
+                        <input class="form-control" type="text" id="currentEmail" placeholder="example@gmail.com" required/>
                     </div>
 
                     <div class="form-group col-lg-6 mx-auto">
-                        <label for="name">New email</label>
-                        <input class="form-control" type="text" id="newEmail" placeholder="New email *"/>
+                        <label for="name">Your new email *</label>
+                        <input class="form-control" type="text" id="newEmail" placeholder="example@gmail.com" required/>
                     </div>
 
                     <div class="form-group col-lg-6 mx-auto">
-                        <label for="name">Confirm new email</label>
-                        <input class="form-control" type="text" id="newEmailConfirm" placeholder="Confirm new email *"/>
+                        <label for="name">Confirm new email *</label>
+                        <input class="form-control" type="text" id="newEmailConfirm" placeholder="example@gmail.com" required/>
                     </div>
 
-                    <button class="btn btn-info button-shadow centered-button" onclick="changeEmail();" type="submit">Submit</button>
+                    <button class="btn btn-info button-shadow centered-button" type="submit">Submit</button>
                 </form>
             </div>
             
             
             <div class="tab-pane fade" id="v-pills-password" role="tabpanel" aria-labelledby="v-pills-password-tab">
-                <form>
+                <form name="changePasswordForm" onsubmit="return changePassword()"> 
                     <div class="form-group col-lg-6 mx-auto">
-                        <label for="name">Current password</label>
-                        <input class="form-control" type="password" id="currentPassword" placeholder="Current password *"/>
+                        <label for="name">Your current password *</label>
+                        <input class="form-control" type="password" id="currentPassword" placeholder="Enter current password here" required/>
                     </div>
 
                     <div class="form-group col-lg-6 mx-auto">
-                        <label for="name">New password</label>
-                        <input class="form-control" type="password" id="newPassword" placeholder="New password *"/>
+                        <label for="name">Your new password *</label>
+                        <input class="form-control" type="password" id="newPassword" placeholder="Enter new password here" required/>
                     </div>
 
                     <div class="form-group col-lg-6 mx-auto">
-                        <label for="name">Confirm new password</label>
-                        <input class="form-control" type="password" id="newPasswordConfirm" placeholder="Confirm new password *"/>
+                        <label for="name">Confirm new password *</label>
+                        <input class="form-control" type="password" id="newPasswordConfirm" placeholder="Re-enter new password here" required/>
                     </div>
 
-                    <button class="btn btn-info button-shadow centered-button" onclick="changePassword();" type="submit">Submit</button>
+                    <button class="btn btn-info button-shadow centered-button" type="submit">Submit</button>
                 </form>
             </div>
             
             
             <div class="tab-pane fade" id="v-pills-points" role="tabpanel" aria-labelledby="v-pills-points-tab">
-                <div class="form-group col-lg-5 mx-auto points-purchase-section">
-                    <h5 class="centered-text">£5 : 150 Points</h5>
-                    <button class="btn btn-danger button-shadow centered-button" onclick="purchasePoints();" type="submit">Purchase</button>
-                </div>
-                
-                <div class="form-group col-lg-5 mx-auto points-purchase-section">
-                    <h5 class="centered-text">£10 : 350 Points</h5>
-                    <button class="btn btn-danger button-shadow centered-button" onclick="purchasePoints();" type="submit">Purchase</button>
-                </div>
-                
-                <div class="form-group col-lg-5 mx-auto points-purchase-section">
-                    <h5 class="centered-text">£20 : 900 Points</h5>
-                    <button class="btn btn-danger button-shadow centered-button" onclick="purchasePoints();" type="submit">Purchase</button>
-                </div>
-                
-                <div class="form-group col-lg-5 mx-auto points-purchase-section">
-                    <h5 class="centered-text">£30 : 1500 Points</h5>
-                    <button class="btn btn-danger button-shadow centered-button" onclick="purchasePoints();" type="submit">Purchase</button>
-                </div>
-                
-                <div class="form-group col-lg-5 mx-auto points-purchase-section">
-                    <h5 class="centered-text">£40 : 2300 Points</h5>
-                    <button class="btn btn-danger button-shadow centered-button" onclick="purchasePoints();" type="submit">Purchase</button>
-                </div>
+                <form onsubmit="return purchasePoints()">
+                    <div class="form-group col-lg-5 mx-auto points-purchase-section">
+                        <h5 class="centered-text">£5 : 150 Points</h5>
+                        <button class="btn btn-danger button-shadow centered-button" type="submit">Purchase</button>
+                    </div>
+                    <div class="form-group col-lg-5 mx-auto points-purchase-section">
+                        <h5 class="centered-text">£10 : 350 Points</h5>
+                        <button class="btn btn-danger button-shadow centered-button" type="submit">Purchase</button>
+                    </div>
+
+                    <div class="form-group col-lg-5 mx-auto points-purchase-section">
+                        <h5 class="centered-text">£20 : 900 Points</h5>
+                        <button class="btn btn-danger button-shadow centered-button" type="submit">Purchase</button>
+                    </div>
+
+                    <div class="form-group col-lg-5 mx-auto points-purchase-section">
+                        <h5 class="centered-text">£30 : 1500 Points</h5>
+                        <button class="btn btn-danger button-shadow centered-button" type="submit">Purchase</button>
+                    </div>
+
+                    <div class="form-group col-lg-5 mx-auto points-purchase-section">
+                        <h5 class="centered-text">£40 : 2300 Points</h5>
+                        <button class="btn btn-danger button-shadow centered-button" type="submit">Purchase</button>
+                    </div>
+                </form>
             </div>
             
             
             <div class="tab-pane fade" id="v-pills-notifications" role="tabpanel" aria-labelledby="v-pills-notifications-tab">
-                <div class="form-group col-lg-5 mx-auto">
-                    <label for="name">Receive email notifications about promotions and updates:</label>
-                    <div>
-                        <label>
-                            <input type="radio" name="receiveNotifications">
-                            Enable
-                        </label>
+                <form name="notificationSettingsForm" onsubmit="return changeNotifications()">
+                    <div class="form-group col-lg-5 mx-auto">
+                        
+                        <label for="name">Receive email notifications about promotions and updates:</label>
+                        <div>
+                            <label>
+                                <input type="radio" name="receiveNotifications" id="receiveNotifications">
+                                Enable
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="radio" name="receiveNotifications" id="receiveNotifications">
+                                Disable
+                            </label>
+                        </div>
+
                     </div>
-                    <div>
-                        <label>
-                            <input type="radio" name="receiveNotifications">
-                            Disable
-                        </label>
-                    </div>
-                    
-                </div>
-                
-                <button class="btn btn-info button-shadow centered-button" onclick="changeNotifications();" type="submit">Submit</button>
+
+                    <button class="btn btn-info button-shadow centered-button" type="submit">Submit</button>
+                </form>
             </div>
             
             
             <div class="tab-pane fade" id="v-pills-question" role="tabpanel" aria-labelledby="v-pills-question-tab">
-                <form>
+                <form name="changeQuestionForm" onsubmit="return changeSecretQuestion()" >
                     <div class="form-group col-lg-5 mx-auto">
-                        <label for="name">Current answer</label>
-                        <input class="form-control form-field" type="text" id="secretAnswer" placeholder="Enter your current answer *"/>
+                        <label for="name">Your current answer *</label>
+                        <input class="form-control form-field" type="text" id="currentSecretAnswer" placeholder="Enter the current answer to secret question" required/>
                     </div>
 
                     <div class="form-group col-lg-5 mx-auto">
-                        <label for="name">Select a secret question</label>
-                        <select class="form-control form-field">
-                            <option class="hidden" selected disabled>Please select your Security Question *</option>
+                        <label for="name">Select new secret question *</label>
+                        <select required class="form-control form-field">
+                            <option value="" class="hidden" selected disabled>Select secret question</option>
                             <option>What is your hometown?</option>
                             <option>What is your old phone number?</option>
                             <option>What is your mother's maiden name?</option>
@@ -198,11 +202,11 @@
                     </div>
 
                     <div class="form-group col-lg-5 mx-auto">
-                        <label for="name">New answer</label>
-                        <input class="form-control form-field" type="text" id="secretAnswer" placeholder="Enter your new answer *"/>
+                        <label for="name">New answer *</label>
+                        <input class="form-control form-field" type="text" id="newSecretAnswer" placeholder="Enter your new answer" required/>
                     </div>
 
-                    <button class="btn btn-info button-shadow centered-button" onclick="changeSecretQuestion();" type="submit">Submit</button>
+                    <button class="btn btn-info button-shadow centered-button" type="submit">Submit</button>
                 </form>
             </div>
         </div>

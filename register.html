@@ -68,26 +68,30 @@
         <div class="page-section col-lg-10 mx-auto">
             
             <h3 class="section-heading">Register</h3>
-            <form>
+            <form name="registrationForm" onsubmit="return register()">
                 
                 <div class="row">
                     <div class="form-group col-lg-5 mx-auto">
-                        <input class="form-control form-field" type="text" id="login" placeholder="Login *"/>
+                        <label for="login">Username *</label>
+                        <input class="form-control form-field" type="text" id="login" placeholder="Enter the login here" tabindex="1" required/>
                     </div>
                     
                     <div class="form-group col-lg-5 mx-auto">
-                        <input class="form-control form-field" type="text" id="email" placeholder="Your Email *"/>
+                        <label for="name">Your Email *</label> 
+                        <input class="form-control form-field" type="text" id="email" placeholder="example@gmail.com" tabindex="4" required/>
                     </div>
                 </div>
                 
                 <div class="row">
                     <div class="form-group col-lg-5 mx-auto">
-                        <input class="form-control form-field" type="password" id="password" placeholder="Password *"/>
+                        <label for="password">Password *</label>
+                        <input class="form-control form-field" type="password" id="password" placeholder="Enter the password here" tabindex="2" required/>
                     </div>
 
                     <div class="form-group col-lg-5 mx-auto">
-                        <select class="form-control form-field">
-                            <option class="hidden" selected disabled>Please select your Security Question *</option>
+                        <label for="question">Security Question *</label>
+                        <select required class="form-control form-field" tabindex="5">
+                            <option value="" class="hidden" selected disabled>Please select your Security Question</option>
                             <option>What is your hometown?</option>
                             <option>What is your old phone number?</option>
                             <option>What is your mother's maiden name?</option>
@@ -98,15 +102,17 @@
                 
                 <div class="row">
                     <div class="form-group col-lg-5 mx-auto">
-                        <input class="form-control form-field" type="password" id="confirmPassword" placeholder="Confirm Password *"/>
+                        <label for="passwordConfirm">Confirm Password *</label>
+                        <input class="form-control form-field" type="password" id="confirmPassword" placeholder="Re-enter the password here" tabindex="3" required/>
                     </div>
                     
                     <div class="form-group col-lg-5 mx-auto">
-                        <input class="form-control form-field" type="text" id="secretAnswer" placeholder="Enter your answer *"/>
+                        <label for="answer">Your answer *</label>
+                        <input class="form-control form-field" type="text" id="secretAnswer" placeholder="Enter your answer to security question" tabindex="6" required/>
                     </div>
                 </div>
                 
-                <button class="btn btn-info button-shadow centered-button" type="submit">Submit</button>
+                <button class="btn btn-info button-shadow centered-button" tabindex="7" type="submit">Submit</button>
             </form>
             
         </div>
