@@ -194,6 +194,49 @@ function addFieldTicket()
 }
 
 /***********************************
+              Search
+***********************************/
+function guildSearch()
+{
+    var search = document.forms["searchGuildForm"]["search"];
+    
+    if (search.value == "Refined")
+    {
+        location = 'guild-ranking-search.html';
+    }
+    else if (search.value == "")
+    {
+        alert("Please enter the name!");
+    }
+    else
+    {
+        alert("Guild not found!");
+    }
+    
+    return false;
+}
+
+function playerSearch()
+{
+    var search = document.forms["searchPlayerForm"]["search"];
+    
+    if (search.value == "BlackCat")
+    {
+        location = 'player-ranking-search.html';
+    }
+    else if (search.value == "")
+    {
+        alert("Please enter the name!");
+    }
+    else
+    {
+        alert("User not found!");
+    }
+    
+    return false;
+}
+
+/***********************************
             Validation
 ***********************************/
 function registerValidation()
