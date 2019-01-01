@@ -54,7 +54,7 @@ function userLoggedIn()
     document.getElementById("registerButton").style.display = "none";
     document.getElementById("logoutButton").style.display = "initial";
     
-    document.getElementById("accountTab").classList.remove("disabled");
+    document.getElementById("accountTab").classList.remove("disabled");   
 }
 
 function userLoggedOut()
@@ -62,7 +62,8 @@ function userLoggedOut()
     document.getElementById("loginButton").style.display = "initial";
     document.getElementById("registerButton").style.display = "initial";
     document.getElementById("logoutButton").style.display = "none";
-    document.getElementById("accountTab").classList.add("disabled");
+    
+    document.getElementById("accountTab").classList.add("disabled");   
 }
 
 function logOut()
