@@ -136,12 +136,17 @@ function changeSecretQuestion()
 
 function addTicket()
 {
-    alert("Ticket has been added successfully!");
+    var success = addTicketValidation();
+    
+    if (success)
+    {
+        alert("Ticket has been added successfully!");
+    }
 }
 
 function addTicketReply()
 {
-    
+    alert("Reply has been added successfully!");
 }
 
 function checkTicket()
@@ -329,6 +334,20 @@ function changeSecretQuestionValidation()
     {
         alert("New secret answer has to be 4 to 16 characters long!");
         newSecretAnswer.focus();
+        return false;
+    }
+    
+    return true;
+}
+
+function addTicketValidation()
+{
+    var email = document.forms["addTicketForm"]["email"];
+    
+    if (validateEmail(email.value) == false)
+    {
+        alert("Invalid email!");
+        email.focus();
         return false;
     }
     
