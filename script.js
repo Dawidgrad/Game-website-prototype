@@ -6,10 +6,6 @@ var objAccounts = [
     {
         username: "admin",
         password: "temp"
-    },
-    {
-        username: "joshua",
-        password: "mko09ijn"
     }
 ]
 
@@ -54,7 +50,7 @@ function userLoggedIn()
     document.getElementById("registerButton").style.display = "none";
     document.getElementById("logoutButton").style.display = "initial";
     
-    document.getElementById("accountTab").classList.remove("disabled");   
+    document.getElementById("accountTab").classList.remove("disabled");  
 }
 
 function userLoggedOut()
@@ -63,7 +59,7 @@ function userLoggedOut()
     document.getElementById("registerButton").style.display = "initial";
     document.getElementById("logoutButton").style.display = "none";
     
-    document.getElementById("accountTab").classList.add("disabled");   
+    document.getElementById("accountTab").classList.add("disabled");
 }
 
 function logOut()
@@ -82,6 +78,19 @@ function checkIfLoggedIn()
     else
     {
         userLoggedOut();
+    }
+}
+
+function addCommentSection()
+{
+    var x = document.cookie;
+    if (x.indexOf("true") != -1)
+    {
+        document.getElementById("postCommentSection").style.display = "block";
+    }
+    else
+    {
+        document.getElementById("postCommentSection").style.display = "none";
     }
 }
 

@@ -17,7 +17,7 @@
     <script type = "text/javascript" src = "script.js" ></script>
     <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
 </head>
-<body onload="checkIfLoggedIn();">
+<body onload="checkIfLoggedIn(); addCommentSection();">
 
     <nav class="navbar navbar-expand navbar-dark bg-dark">
             
@@ -186,7 +186,7 @@
     </div>
     
     
-    <div class="container-fluid row">
+    <div class="container-fluid row" id="postCommentSection">
         <div class="page-section col-lg-10 mx-auto">
             
             <form onsubmit="return addReply()">

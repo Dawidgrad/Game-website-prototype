@@ -34,7 +34,7 @@ a.navigation{width: 150px; text-align: center}
 .comment-text{padding-left: 70px; margin-top: 10px}
 .comment-signature{text-align: right; margin-bottom: 10px}
 .comment-box{margin-top: 20px}
-div.comment-section{border-top: 3px solid darkgray}
+div.comment-section{border-top: 3px solid darkgray; display: block}
 
 /* Misc */
 .read-more-button{margin-right: 20px; width: 150px}
