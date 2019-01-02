@@ -159,7 +159,7 @@ function checkTicket()
     var email = document.getElementById("email").value
     var ticketNumber = document.getElementById("ticketNumber").value
     
-    if (email == "joshua@gmail.com" && ticketNumber == "2584")
+    if (email == "joshua@gmail.com" && ticketNumber == "30288/109")
     {
         alert("Ticket found! You will be redirected to ticket page!");
         location = 'ticket-status-example.html';
